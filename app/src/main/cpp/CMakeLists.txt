@@ -35,7 +35,7 @@ add_library(
        SHARED
        IMPORTED )
 #Defining proporties to include the library from the machine
-set_target_properties(taglib PROPERTIES IMPORTED_LOCATION taglib/$(ANDROID_ABI)/libtaglib.dll )
+set_target_properties(taglib PROPERTIES IMPORTED_LOCATION taglib/$(ANDROID_ABI)/libtag.dll )
 
 #Linking taglib to the native library where I'll write all my codes and use the predefined functions,classes
 target_link_libraries(native-lib ${taglib})
